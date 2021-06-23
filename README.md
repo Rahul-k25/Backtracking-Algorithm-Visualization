@@ -16,12 +16,18 @@ A rat starts from source and has to reach the destination. The rat can move only
 * Algorithm files: `Knight_Tour.py`, `Rat_In_The_Maze`
 * other files: `ExtraWidgets.py`, `MainMenu.py`, `StartProcess.py`
 
-## Build
+## Prerequisite 
+```
+[Python](https://www.python.org/downloads/)
+```
+```
+[Pygame Library](https://www.pygame.org/wiki/GettingStarted#Further%20information%20on%20installation)
+```
+```
+[Pillow PIL Library](https://pillow.readthedocs.io/en/stable/installation.html)
+```
 
-* **Prerequisite**: 
-[Python](https://www.python.org/downloads/), [Pygame Library](https://www.pygame.org/wiki/GettingStarted#Further%20information%20on%20installation), [Pillow PIL Library](https://pillow.readthedocs.io/en/stable/installation.html)
-
-* **Build**: 
+## Build 
 ```
 download or clone all the files
 ```
