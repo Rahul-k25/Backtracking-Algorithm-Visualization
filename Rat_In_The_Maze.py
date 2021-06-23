@@ -1,7 +1,7 @@
 import pygame
 import time
 from threading import *
-import ExtraWidgits
+import ExtraWidgets
 import StartProcess
 import Rat_In_The_Maze
 
@@ -37,10 +37,10 @@ class Rat_in_Maze:
         self.win.blit(font.render("Click on cells to create wall.", False, (255, 255, 255)), (670,50))
         self.win.blit(font.render("Press Space to START", False, (255, 255, 255)),(700,80))
         
-        AddMainMenuButton = ExtraWidgits.MainMenuButton(self.win,700,300)
+        AddMainMenuButton = ExtraWidgets.MainMenuButton(self.win,700,300)
         AddMainMenuButton.start()
 
-        AddExitText = ExtraWidgits.ExitText(self.win,725,250)
+        AddExitText = ExtraWidgets.ExitText(self.win,725,250)
         AddExitText.start()
         self.CheckActions()
     
@@ -181,12 +181,12 @@ class Rat_in_Maze:
     def solve(self):
         self.visited[0][0]=1
         if(self.find_way(0,0)):
-            ExtraWidgits.OperationsDoneRat(self.operations-1,self.win,700,400,"MAZE is Solved")
+            ExtraWidgets.OperationsDoneRat(self.operations-1,self.win,700,400,"MAZE is Solved")
         elif(not self.running):
             self.WaitForEndProcess=False
             return 0
         else:
-            ExtraWidgits.OperationsDoneRat(self.operations-1,self.win,700,400,"MAZE cannot be Solved")
+            ExtraWidgets.OperationsDoneRat(self.operations-1,self.win,700,400,"MAZE cannot be Solved")
         font = pygame.font.SysFont('helvetica', 28)
         self.win.blit(font.render("Press Enter to Restart.", False, (255, 255, 255)), (680,500))
         self.WaitForEndProcess=False

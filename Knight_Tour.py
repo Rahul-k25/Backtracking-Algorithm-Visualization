@@ -2,11 +2,10 @@ import pygame
 from heapq import *
 import random
 import time
-import ExtraWidgits
+import ExtraWidgets
 from threading import *
 import StartProcess
 import Knight_Tour
-
 
 class Knight():
     def __init__(self, v, speed):
@@ -41,9 +40,9 @@ class Knight():
     def StartVisualization(self):
         self.grid()
         
-        AddExitText = ExtraWidgits.ExitText(self.win,725,250)
+        AddExitText = ExtraWidgets.ExitText(self.win,725,250)
         AddExitText.start()
-        AddMainMenuButton = ExtraWidgits.MainMenuButton(self.win,700,300)
+        AddMainMenuButton = ExtraWidgets.MainMenuButton(self.win,700,300)
         AddMainMenuButton.start()
         
         StartSolving=Thread(target=self.solve)
@@ -155,6 +154,6 @@ class Knight():
             else:
                 break
         if self.running:
-            ExtraWidgits.OperationsDoneKnight(self.operations, self.win, 700, 400, "Knight's Tour Completed.")
+            ExtraWidgets.OperationsDoneKnight(self.operations, self.win, 700, 400, "Knight's Tour Completed.")
         self.WaitForEndProcess=False
         return True
