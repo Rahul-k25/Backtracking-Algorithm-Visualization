@@ -1,7 +1,7 @@
 import pygame
 import random
 import time
-from tkinter import *
+from tk import *
 from threading import *
 import StartProcess
 
