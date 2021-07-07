@@ -4,3 +4,4 @@ Pillow==7.0.0
 pygame==2.0.1
 requests==2.23.0
 tk==0.1.0
+tkinter==8.6
